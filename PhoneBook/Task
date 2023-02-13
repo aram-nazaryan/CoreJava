@@ -1,0 +1,66 @@
+Requirements:
+Create a Console application that will represent PhoneBook. 
+The program should read all records from a file (with predefined structure), sort them (with chosen criteria and ordering) and show sorted records in Console. After showing records it must show Validation messages for each line if there are nonvalid items.
+
+On start the program should ask File Path (which should be relative, and the folder of files should be put in the project).
+Find the files here:
+
+File Path - {filePath}
+
+Then after entering the file path the program needs to read all records from the file (which is with a predefined structure).
+
+
+File Structure:
+{name} {surname} {separator} {phoneNumber}
+Edgar Danielyan - 0989598949
+Hovhannes Shitikyan - 0988598949
+Artak Hovhannisyan : 0925484988
+Nara Hovhannisyan : 092548487
+
+Validations for each line in the file:
+Phone number should be with 9 Digits
+The surname can be empty
+The separator should be `:` or `-`.
+
+After reading records from the file, it must sort the records with predefined ordering and with the following criteria and show them in the console.
+
+Criteria:
+First Name
+Last Name
+Phone Number Code (first 3 digits of Phone Number)
+
+The order should be with following ways:
+Ascending (0 to 9 or a - z)
+Descending (9 to 0 or z-a)
+
+If the selected criteria is "Surname", lines containing an empty surname should appear in the last rows.
+Criteria and the ordering should be selected by the user before showing the records in the console.
+
+“Please choose an ordering to sort: “Ascending” or “Descending”.
+“Please choose criteria: “Name”, “Surname” or “PhoneNumberCode”.
+
+
+After showing the sorted records, it must show Validation messages for each line’s non-valid item, also mentioning the line. 
+
+Message structure:
+Validations:
+{line x}: {The message(s)}.
+line 1: phone number should be with 9 digits, the separator should be `:` or `-`.
+line 2: phone number should be 9 digits.
+line 3: separator should be `:` or `-`.
+
+
+Important Notes:
+For Implementation, you need to use One Function for Sorting with Delegate Parameter 
+Do not use Regex for this problem 
+Example
+File Structure: 
+Sveta Danielyan @ 0989598949
+Hovhannes Shitikyan - 0988598949
+Ara Hovhannisyan @ 0547
+
+Validation: 
+line 1: phone number should be with 9 digits, the separator should be `:` or `-`.
+line 2: phone number should be 9 digits.
+line 3: phone number should be with 9 digits, the separator should be `:` or `-`.
+
