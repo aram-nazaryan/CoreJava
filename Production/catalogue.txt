@@ -1,0 +1,9 @@
+Sweets,1,Dark Chocolate,400,800
+Beverage,2,Red Wine,100,0.7
+Beverage,3,Beer,300,0.5
+Toy,4,Teddy Bear,5000,1
+KitchenItems,5,Cup,2000,1
+Sweets,6,Alpen Gold,500,100
+Beverage,7,Bacardi Black,1000,0.7
+Toy,8,Spider Man,3000,1
+KitchenItems,9,Chef's Knife,1200,1
