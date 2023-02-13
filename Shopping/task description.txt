@@ -1,0 +1,22 @@
+Write a program that processes the checkout in a supermarket.
+Model a ShoppingCart using an array of ProductItem that keeps the items and counts the
+ﬁnal total price. When the total price is calculated, the payment should take place. Take note that
+payment is a general concepts and there are special payment types such as CashPayment and
+CreditCardPayment.
+In your program, add some ProductItems in the store catalogue so that you can run the program
+with actual command-line input. You may use the Scanner class to accept and process input.
+
+Some of the classes that may exist in your program (complete the implementation).
+class ProductItem {
+// product number, unit price, name, any other useful data
+}
+ShoppingCart {
+private ProductItem[] items; // Choose a maximum number of allowed items to simplify the program
+private int[] quantity; // the quantity of n-th item in the ProductItem[] array
+public void add(ProductItem item, int howMany) { ... }
+public double getTotal() { ... } //
+}
+interface Payment() {
+void accept(double amount);
+boolean verify();
+} // Implement cash and credit-card payment methods
